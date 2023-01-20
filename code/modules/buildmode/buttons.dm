@@ -1,5 +1,5 @@
 /obj/screen/buildmode
-	icon = 'icons/misc/buildmode.dmi'
+	//icon = 'icons/misc/buildmode.dmi'
 	var/datum/click_intercept/buildmode/bd
 	plane = HUD_PLANE_BUILDMODE
 
