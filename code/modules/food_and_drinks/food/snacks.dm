@@ -148,15 +148,6 @@
 /obj/item/reagent_containers/food/snacks/attack_animal(mob/M)
 	if(isanimal(M))
 		M.changeNext_move(CLICK_CD_MELEE)
-		//HISPANIA CHANGES START
-		if(isfeedme(M))
-			var/mob/living/simple_animal/feedme/D = M
-			playsound(loc,'sound/items/eatfood.ogg', rand(10,50), 1)
-			D.adjustHealth(-100) //se cura
-			D.taste(reagents)
-			D.alimentar(src)
-			qdel(src)
-		//HISPANIA CHANGES END
 		if(isdog(M))
 			var/mob/living/simple_animal/pet/dog/D = M
 			if(world.time < (D.last_eaten + 300))
@@ -225,7 +216,7 @@
 	var/slices_lost = 0
 	if(!inaccurate)
 		user.visible_message("<span class='notice'>[user] slices [src]!</span>",
-		 "<span class='notice'>You slice [src]!</span>")
+		"<span class='notice'>You slice [src]!</span>")
 	else
 		user.visible_message("<span class='notice'>[user] crudely slices [src] with [I]!</span>",
 			"<span class='notice'>You crudely slice [src] with your [I]</span>!")
