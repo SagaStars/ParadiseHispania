@@ -24,6 +24,13 @@
 	CONFIG_LOAD_BOOL(forward_all_ahelps, data["forward_all_ahelps"])
 	CONFIG_LOAD_STR(admin_role_id, data["admin_role_id"])
 	CONFIG_LOAD_STR(mentor_role_id, data["mentor_role_id"])
+	/// HISPANIA START
+	CONFIG_LOAD_STR(player_role_id, data["player_role_id"])
+	/// HISPANIA END
 	CONFIG_LOAD_LIST(main_webhook_urls, data["main_webhook_urls"])
 	CONFIG_LOAD_LIST(mentor_webhook_urls, data["mentor_webhook_urls"])
 	CONFIG_LOAD_LIST(admin_webhook_urls, data["admin_webhook_urls"])
+	/// HISPANIA START
+	CONFIG_LOAD_LIST(bans_webhook_urls, data["bans_webhook_urls"])
+	CONFIG_LOAD_LIST(notes_webhook_urls, data["notes_webhook_urls"])
+	/// HISPANIA END

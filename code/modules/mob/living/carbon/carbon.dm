@@ -189,10 +189,27 @@
 /mob/living/carbon/swap_hand()
 	if(SEND_SIGNAL(src, COMSIG_MOB_SWAPPING_HANDS, get_active_hand()) == COMPONENT_BLOCK_SWAP)
 		return
+	var/obj/item/item_in_hand = get_active_hand()
+	if(item_in_hand) //this segment checks if the item in your hand is twohanded.
+		if(istype(item_in_hand,/obj/item/twohanded))
+			if(item_in_hand:wielded == 1)
+				to_chat(usr, "<span class='warning'>Your other hand is too busy holding the [item_in_hand.name]</span>")
+				return
+		item_in_hand.swapped(src) // hispania
 	hand = !hand
+	// HISPANIA STARTS HERE
+	var/obj/item/item_swappedto_hand = src.get_active_hand()
+	if(item_swappedto_hand)
+		item_swappedto_hand.swappedto(src)
+	// HISPANIA ENDS HERE
+	if(hud_used && hud_used.inv_slots[slot_l_hand] && hud_used.inv_slots[slot_r_hand])
+		var/obj/screen/inventory/hand/H
+		H = hud_used.inv_slots[slot_l_hand]
+		H.update_icon()
+		H = hud_used.inv_slots[slot_r_hand]
+		H.update_icon()
 	update_hands_hud()
 	SEND_SIGNAL(src, COMSIG_CARBON_SWAP_HANDS)
-
 
 /mob/living/carbon/activate_hand(selhand) //0 or "r" or "right" for right hand; 1 or "l" or "left" for left hand.
 

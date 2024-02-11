@@ -117,25 +117,12 @@
 					"Who needs responsibilities when you have guns?")
 
 	vend_reply = "Remember the name: Liberation Station!"
-	products = list(/obj/item/gun/projectile/automatic/pistol/deagle/gold = 2,
-					/obj/item/gun/projectile/automatic/pistol/deagle/camo = 2,
-					/obj/item/gun/projectile/automatic/pistol/m1911 = 2,
-					/obj/item/gun/projectile/automatic/proto = 2,
-					/obj/item/gun/projectile/shotgun/automatic/combat = 2,
-					/obj/item/gun/projectile/automatic/gyropistol = 1,
-					/obj/item/gun/projectile/shotgun = 2,
-					/obj/item/gun/projectile/automatic/ar = 2,
-					/obj/item/gun/projectile/automatic/ak814 = 2,
-					/obj/item/ammo_box/magazine/smgm9mm = 2,
-					/obj/item/ammo_box/magazine/m50 = 4,
-					/obj/item/ammo_box/magazine/m45 = 2,
-					/obj/item/ammo_box/magazine/m75 = 2,
-					/obj/item/ammo_box/magazine/m556/arg = 2,
-					/obj/item/ammo_box/magazine/ak814 = 2)
-
-	contraband = list(/obj/item/clothing/under/costume/patriotsuit = 1,
-					/obj/item/bedsheet/patriot = 3)
-
+	products = list(/obj/item/gun/projectile/automatic/pistol/deagle/gold = 2,/obj/item/gun/projectile/automatic/pistol/deagle/camo = 2,
+					/obj/item/gun/projectile/automatic/pistol/m1911 = 2,/obj/item/gun/projectile/automatic/fullauto/twomode/proto = 2, // hispania
+					/obj/item/gun/projectile/shotgun/automatic/combat = 2,/obj/item/gun/projectile/automatic/gyropistol = 1,
+					/obj/item/gun/projectile/shotgun = 2,/obj/item/gun/projectile/automatic/fullauto/ar = 2)
+	contraband = list(/obj/item/clothing/under/costume/patriotsuit = 1, /obj/item/bedsheet/patriot = 3)
+	
 	armor = list(MELEE = 100, BULLET = 100, LASER = 100, ENERGY = 100, BOMB = 0, RAD = 0, FIRE = 100, ACID = 50)
 	resistance_flags = FIRE_PROOF
 
@@ -169,14 +156,14 @@
 					/obj/item/clothing/head/syndicatefake = 5) //OPS IN DORMS oh wait it's just an assistant
 
 	contraband = list(/obj/item/gun/projectile/shotgun/toy/crossbow = 10,   //Congrats, you unlocked the +18 setting!
-					/obj/item/gun/projectile/automatic/c20r/toy/riot = 10,
-					/obj/item/gun/projectile/automatic/l6_saw/toy/riot = 10,
-					/obj/item/gun/projectile/automatic/sniper_rifle/toy = 10,
+					/obj/item/gun/projectile/automatic/fullauto/twomode/c20r/toy/riot = 10,
+					/obj/item/gun/projectile/automatic/fullauto/l6_saw/toy/riot = 10,
+  					/obj/item/gun/projectile/automatic/sniper_rifle/toy = 10,
 					/obj/item/ammo_box/foambox/riot = 20,
 					/obj/item/toy/katana = 10,
-					/obj/item/dualsaber/toy = 5,
+					/obj/item/twohanded/dualsaber/toy = 5,
 					/obj/item/deck/cards/syndicate = 10) //Gambling and it hurts, making it a +18 item
-
+			
 	armor = list(MELEE = 100, BULLET = 100, LASER = 100, ENERGY = 100, BOMB = 0, RAD = 0, FIRE = 100, ACID = 50)
 	resistance_flags = FIRE_PROOF
 

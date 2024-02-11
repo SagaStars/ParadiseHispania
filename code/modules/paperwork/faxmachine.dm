@@ -290,7 +290,7 @@ GLOBAL_LIST_EMPTY(fax_blacklist)
 		to_chat(user, "<span class='notice'>There is nothing to remove from [src].</span>")
 
 /obj/machinery/photocopier/faxmachine/proc/sendfax(destination, mob/sender)
-	use_power(active_power_consumption)
+	power_state(active_power_consumption)
 	var/success = 0
 	for(var/obj/machinery/photocopier/faxmachine/F in GLOB.allfaxes)
 		if(F.department == destination)
@@ -332,10 +332,10 @@ GLOBAL_LIST_EMPTY(fax_blacklist)
 	else
 		return
 
-	use_power(active_power_consumption)
+	power_state(active_power_consumption)
 
 /obj/machinery/photocopier/faxmachine/proc/send_admin_fax(mob/sender, destination)
-	use_power(active_power_consumption)
+	power_state(active_power_consumption)
 
 	if(!(istype(copyitem, /obj/item/paper) || istype(copyitem, /obj/item/paper_bundle) || istype(copyitem, /obj/item/photo)))
 		visible_message("[src] beeps, \"Error transmitting message.\"")

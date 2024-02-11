@@ -177,28 +177,19 @@
 	if(escaped_on_pod_5)
 		SSblackbox.record_feedback("nested tally", "round_end_stats", escaped_on_pod_5, list("escapees", "on_pod_5"))
 
-	GLOB.discord_manager.send2discord_simple(DISCORD_WEBHOOK_PRIMARY, "A round of [name] has ended - [surviving_total] survivors, [ghosts] ghosts.")
-	if(SSredis.connected)
-		// Send our presence to required channels
-		var/list/presence_data = list()
-		presence_data["author"] = "system"
-		presence_data["source"] = GLOB.configuration.system.instance_id
-		presence_data["message"] = "Round [GLOB.round_id] ended at `[SQLtime()]`"
+	// HISPANIA EMBED STARTS HERE ○_○
+	var/datum/discord_embed/new_round_embed/nwe = new
+	nwe.embed_title = "Ronda Terminada"
+	nwe.embed_colour = "FF002E"
+	nwe.embed_content = "Una ronda en modo `[name]` acaba de terminar.\n• **[surviving_total]** supervivientes.\n• **[ghosts]** muertos.\n *Una nueva ronda comenzara en breve.* <@&[GLOB.configuration.discord.player_role_id]>"
+	var/datum/discord_webhook_payload/nr = new
+	nr.embeds += nwe // Insertamos el nuevo discord_embed en la lista.
 
-		var/presence_text = json_encode(presence_data)
-
-		for(var/channel in list("byond.asay", "byond.msay")) // Channels to announce to
-			SSredis.publish(channel, presence_text)
-
-		// Report detailed presence info to system
-		var/list/presence_data_2 = list()
-		presence_data_2["source"] = GLOB.configuration.system.instance_id
-		presence_data_2["round_id"] = GLOB.round_id
-		presence_data_2["event"] = "round_end"
-		SSredis.publish("byond.system", json_encode(presence_data_2))
+	GLOB.discord_manager.send2discord_complex(DISCORD_WEBHOOK_PRIMARY, nr)
+	GLOB.discord_manager.send2discord_simple(DISCORD_WEBHOOK_PRIMARY, "<@&[GLOB.configuration.discord.player_role_id]>")
+	///HISPANIA ENDS HERE
 
 	return 0
-
 
 /datum/game_mode/proc/check_win() //universal trigger to be called at mob death, nuke explosion, etc. To be called from everywhere.
 	if(rev_team)

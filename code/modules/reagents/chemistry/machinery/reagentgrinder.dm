@@ -61,24 +61,32 @@
 	var/list/juice_items = list (
 
 		//Juicer Stuff
-		/obj/item/food/snacks/grown/soybeans = list("soymilk" = 0),
-		/obj/item/food/snacks/grown/corn = list("corn_starch" = 0),
-		/obj/item/food/snacks/grown/tomato = list("tomatojuice" = 0),
-		/obj/item/food/snacks/grown/carrot = list("carrotjuice" = 0),
-		/obj/item/food/snacks/grown/berries = list("berryjuice" = 0),
-		/obj/item/food/snacks/grown/banana = list("banana" = 0),
-		/obj/item/food/snacks/grown/potato = list("potato" = 0),
-		/obj/item/food/snacks/grown/citrus/lemon = list("lemonjuice" = 0),
-		/obj/item/food/snacks/grown/citrus/orange = list("orangejuice" = 0),
-		/obj/item/food/snacks/grown/citrus/lime = list("limejuice" = 0),
-		/obj/item/food/snacks/grown/watermelon = list("watermelonjuice" = 0),
-		/obj/item/food/snacks/watermelonslice = list("watermelonjuice" = 0),
-		/obj/item/food/snacks/grown/berries/poison = list("poisonberryjuice" = 0),
-		/obj/item/food/snacks/grown/pumpkin/blumpkin = list("blumpkinjuice" = 0), //order is important here as blumpkin is a subtype of pumpkin, if switched blumpkins will produce pumpkin juice
-		/obj/item/food/snacks/grown/pumpkin = list("pumpkinjuice" = 0),
-		/obj/item/food/snacks/grown/apple = list("applejuice" = 0),
-		/obj/item/food/snacks/grown/grapes = list("grapejuice" = 0),
-		/obj/item/food/snacks/grown/pineapple = list("pineapplejuice" = 0)
+		/obj/item/reagent_containers/food/snacks/grown/soybeans = list("soymilk" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/corn = list("corn_starch" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/tomato = list("tomatojuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/carrot = list("carrotjuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/berries = list("berryjuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/banana = list("banana" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/potato = list("potato" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/citrus/lemon = list("lemonjuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/citrus/orange = list("orangejuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/citrus/lime = list("limejuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/watermelon = list("watermelonjuice" = 0),
+		/obj/item/reagent_containers/food/snacks/watermelonslice = list("watermelonjuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/berries/poison = list("poisonberryjuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/pumpkin = list("pumpkinjuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/pumpkin/blumpkin = list("blumpkinjuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/apple = list("applejuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/grapes = list("grapejuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/grapes/green = list("grapejuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/pineapple = list("pineapplejuice" = 0),
+
+		//HISPANIA CHANGES START
+		/obj/item/reagent_containers/food/snacks/drakemeat = list("drakeblood" = 10),
+		/obj/item/reagent_containers/food/snacks/grown/anonna = list("anonnajuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/nispero = list("nisperojuice" = 0),
+		/obj/item/reagent_containers/food/snacks/grown/prickly_pear = list("cactusjuice" = 0)
+		//HISPANIA CHANGES END
 	)
 
 	var/list/dried_items = list(

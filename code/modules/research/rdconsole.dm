@@ -413,7 +413,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 		flick("circuit_imprinter_ani", machine)
 
 	machine.busy = TRUE
-	use_power(power)
+	power_state(power)
 
 	var/list/efficient_mats = list()
 	for(var/MAT in being_built.materials)

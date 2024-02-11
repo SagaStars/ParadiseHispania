@@ -499,6 +499,6 @@
 	if(mobarea.name == E.allowed_area || mobarea.xenobiology_compatible)
 		if(issmall(M) && M.stat)
 			M.visible_message("[M] vanishes as [M.p_theyre()] reclaimed for recycling!")
-			recycler.use_power(500)
+			recycler.power_state(500)
 			X.monkeys = round(X.monkeys + recycler.cube_production/recycler.required_grind, 0.1)
 			qdel(M)

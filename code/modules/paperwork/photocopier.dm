@@ -298,21 +298,21 @@
 			if(!papercopy(C))
 				break
 			toner -= 1
-			use_power(active_power_consumption)
+			power_state(active_power_consumption)
 			sleep(PHOTOCOPIER_DELAY)
 	else if(istype(C, /obj/item/photo))
 		for(var/i in copies to 1 step -1)
 			if(!photocopy(C))
 				break
 			toner -= 5
-			use_power(active_power_consumption)
+			power_state(active_power_consumption)
 			sleep(PHOTOCOPIER_DELAY)
 	else if(istype(C, /obj/item/paper_bundle))
 		var/obj/item/paper_bundle/B = C
 		for(var/i in copies to 1 step -1)
 			if(!bundlecopy(C, use_toner = TRUE))
 				break
-			use_power(active_power_consumption)
+			power_state(active_power_consumption)
 			sleep(PHOTOCOPIER_DELAY * (B.amount + 1))
 	else if(check_mob()) //Once we've scanned the copy_mob's ass we do not need to again
 		for(var/i in copies to 1 step -1)

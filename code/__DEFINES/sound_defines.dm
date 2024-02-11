@@ -13,6 +13,9 @@
 #define CHANNEL_BOSS_MUSIC 1013
 #define CHANNEL_GENERAL 1012
 
+// HISPANIA RADIOBOX: Es obligatitorio que este aqui por cuestiones de orden de compilacion.
+#define CHANNEL_RADIOBOX 1010
+
 #define USER_VOLUME(M, C) M?.client?.prefs.get_channel_volume(C)
 
 //THIS SHOULD ALWAYS BE THE LOWEST ONE!

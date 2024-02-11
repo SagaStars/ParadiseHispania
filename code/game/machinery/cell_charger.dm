@@ -153,7 +153,7 @@
 	if(charging.percent() >= 100)
 		return
 
-	use_power(charge_rate)
+	power_state(charge_rate)
 	charging.give(charge_rate)
 
 	if(check_level())

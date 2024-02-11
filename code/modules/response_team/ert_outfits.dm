@@ -154,7 +154,8 @@
 	suit_store = /obj/item/gun/energy/gun/blueshield/pdw9
 	glasses = /obj/item/clothing/glasses/sunglasses
 	mask = /obj/item/clothing/mask/gas/sechailer
-	l_hand = /obj/item/gun/projectile/automatic/lasercarbine
+
+	l_hand = /obj/item/gun/projectile/automatic/fullauto/lasercarbine
 
 	backpack_contents = list(
 		/obj/item/clothing/shoes/magboots = 1,

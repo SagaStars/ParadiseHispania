@@ -515,7 +515,7 @@
 
 /obj/machinery/emp_act(severity)
 	if(power_state && !stat)
-		use_power(7500/severity)
+		power_state(7500/severity)
 		. = TRUE
 	..()
 

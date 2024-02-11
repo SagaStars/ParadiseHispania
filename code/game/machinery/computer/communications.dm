@@ -105,7 +105,7 @@
 		var/list/access = ui.user.get_access()
 		if(allowed(ui.user))
 			authenticated = COMM_AUTHENTICATION_HEAD
-		if(ACCESS_CAPTAIN in access)
+		if(ACCESS_HEADS in access)	//Hispania changes start & end here
 			authenticated = COMM_AUTHENTICATION_CAPT
 		if(ACCESS_CENT_COMMANDER in access)
 			if(!check_rights_all(R_ADMIN|R_EVENT, FALSE, ui.user))

@@ -28,6 +28,8 @@
 #define GLAND_HUD 			"23"//Gland indicators for abductors
 #define JANI_HUD			"24" // Sign overlay over cleanable decals
 
+
+
 //by default everything in the hud_list of an atom is an image
 //a value in hud_list with one of these will change that behavior
 #define HUD_LIST_LIST 1
@@ -56,6 +58,7 @@
 #define DATA_HUD_ABDUCTOR	19
 #define ANTAG_HUD_EVENTMISC 20
 #define ANTAG_HUD_BLOB 21
+#define GAME_HUD_NATIONS 25
 
 // Notification action types
 #define NOTIFY_JUMP "jump"

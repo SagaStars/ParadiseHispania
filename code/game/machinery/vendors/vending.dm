@@ -98,7 +98,8 @@
 
 	/// If true, enforce access checks on customers. Disabled by messing with wires.
 	var/scan_id = TRUE
-
+	/// Holder for a coin inserted into the vendor
+	var/obj/item/coin/coin
 	var/datum/wires/vending/wires
 
 	/// boolean, whether this vending machine can accept people inserting items into it, used for coffee vendors
@@ -797,7 +798,7 @@
 		speak(vend_reply)
 		last_reply = world.time
 
-	use_power(vend_power_usage)	//actuators and stuff
+	power_state(vend_power_usage)	//actuators and stuff
 	if(icon_vend) //Show the vending animation if needed
 		flick(icon_vend, src)
 	playsound(get_turf(src), 'sound/machines/machine_vend.ogg', 50, TRUE)

@@ -94,6 +94,10 @@
 
 	if(stat != DEAD)
 		return TRUE
+	//HISPANIA CHANGES START
+	if(get_nations_mode())
+		process_nations()
+	//HISPANIA CHANGES END
 
 /mob/living/proc/handle_breathing(times_fired)
 	return

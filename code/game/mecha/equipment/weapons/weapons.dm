@@ -52,7 +52,7 @@
 				spread = round((i / projectiles_per_shot - 0.5) * variance)
 		A.preparePixelProjectile(target, targloc, chassis.occupant, params, spread)
 
-		chassis.use_power(energy_drain)
+		chassis.power_state(energy_drain)
 		projectiles--
 		A.fire()
 		playsound(chassis, fire_sound, 50, 1)
@@ -236,9 +236,9 @@
 						walk(thingy,0)
 	for(var/obj/mecha/combat/reticence/R in oview(6, chassis))
 		R.occupant_message("\The [R] has protected you from [chassis]'s HONK at the cost of some power.")
-		R.use_power(R.get_charge() / 4)
+		R.power_state(R.get_charge() / 4)
 
-	chassis.use_power(energy_drain)
+	chassis.power_state(energy_drain)
 	log_message("Honked from [name]. HONK!")
 	var/turf/T = get_turf(src)
 	add_attack_logs(chassis.occupant, target, "used a Mecha Honker", ATKLOG_MOST)
@@ -264,7 +264,7 @@
 		while(chassis.get_charge() >= projectile_energy_cost && projectiles_to_add)
 			projectiles++
 			projectiles_to_add--
-			chassis.use_power(projectile_energy_cost)
+			chassis.power_state(projectile_energy_cost)
 	send_byjax(chassis.occupant,"exosuit.browser","\ref[src]",get_equip_info())
 	log_message("Rearmed [name].")
 	playsound(src, 'sound/weapons/gun_interactions/rearm.ogg', 50, 1)

@@ -129,6 +129,11 @@
 
 	/// When to next alert admins that mouse macro use was attempted
 	var/next_mouse_macro_warning
+	////////////////
+	//HIPANIA AUTO//
+	////////////////
+	var/datum/click_handler/CH
+	///////////////////////////
 
 /client/vv_edit_var(var_name, var_value)
 	switch(var_name)
