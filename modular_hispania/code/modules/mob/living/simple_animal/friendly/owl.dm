@@ -15,7 +15,7 @@
 	emote_see = list("hoot")
 	var/owl_sound = 'modular_hispania/sound/mob/owl_hoot.ogg'	//Used in emote.
 	speak_chance = 1
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat = 3)
+	//butcher_results = list(/obj/item/reagent_containers/food/snacks/meat = 3)
 	turns_per_move = 10
 	can_collar = FALSE
 	unique_pet = TRUE
@@ -30,7 +30,7 @@
 	key_third_person = "hoots"
 	message = "Hoots!"
 	message_simple = "hoots."
-	emote_type = EMOTE_SOUND | EMOTE_MOUTH
+	emote_type = EMOTE_AUDIBLE | EMOTE_MOUTH
 	volume = 80
 	sound = 'modular_hispania/sound/mob/owl_hoot.ogg'
 /datum/keybinding/emote/living/simple_animal/friendly/owl

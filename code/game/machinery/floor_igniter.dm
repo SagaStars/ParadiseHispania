@@ -27,7 +27,7 @@
 
 	add_fingerprint(user)
 
-	power_state(50)
+	use_power(50)
 	on = !on
 	update_icon()
 
@@ -128,7 +128,7 @@
 	flick("[base_state]-spark", src)
 	do_sparks(2, 1, src)
 	last_spark = world.time
-	power_state(1000)
+	use_power(1000)
 
 	var/turf/location = get_turf(src)
 	if(isturf(location))

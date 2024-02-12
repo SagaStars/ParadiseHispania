@@ -122,7 +122,7 @@
 					/obj/item/gun/projectile/shotgun/automatic/combat = 2,/obj/item/gun/projectile/automatic/gyropistol = 1,
 					/obj/item/gun/projectile/shotgun = 2,/obj/item/gun/projectile/automatic/fullauto/ar = 2)
 	contraband = list(/obj/item/clothing/under/costume/patriotsuit = 1, /obj/item/bedsheet/patriot = 3)
-	
+
 	armor = list(MELEE = 100, BULLET = 100, LASER = 100, ENERGY = 100, BOMB = 0, RAD = 0, FIRE = 100, ACID = 50)
 	resistance_flags = FIRE_PROOF
 
@@ -161,9 +161,8 @@
   					/obj/item/gun/projectile/automatic/sniper_rifle/toy = 10,
 					/obj/item/ammo_box/foambox/riot = 20,
 					/obj/item/toy/katana = 10,
-					/obj/item/twohanded/dualsaber/toy = 5,
 					/obj/item/deck/cards/syndicate = 10) //Gambling and it hurts, making it a +18 item
-			
+
 	armor = list(MELEE = 100, BULLET = 100, LASER = 100, ENERGY = 100, BOMB = 0, RAD = 0, FIRE = 100, ACID = 50)
 	resistance_flags = FIRE_PROOF
 

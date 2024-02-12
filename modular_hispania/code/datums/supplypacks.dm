@@ -36,21 +36,3 @@
 	cost = 150
 	containername = "custom music"
 	containertype = /obj/structure/closet/crate/plastic
-
-//objetivo BFL
-/datum/supply_packs/misc/station_goal/bfl
-	name = "BFL assembly crate"
-	cost = 250
-	contains = list(
-					/obj/item/circuitboard/machine/bfl_emitter,
-					/obj/item/circuitboard/machine/bfl_receiver
-					)
-	containername = "BFL assembly crate"
-
-/datum/supply_packs/misc/station_goal/bfl_lens
-	name = "BFL High-precision lens"
-	cost = 50
-	contains = list(
-					/obj/machinery/bfl_lens
-					)
-	containername = "BFL High-precision lens"

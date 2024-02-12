@@ -9,15 +9,15 @@
 
 /datum/emote/living/carbon/laugh/New()
 	..()
-	emote_type = EMOTE_SOUND | EMOTE_MOUTH
+	emote_type = EMOTE_AUDIBLE | EMOTE_MOUTH
 
 /datum/emote/living/carbon/human/cry/New()
 	..()
-	emote_type = EMOTE_SOUND | EMOTE_MOUTH
+	emote_type = EMOTE_AUDIBLE | EMOTE_MOUTH
 
 /datum/emote/living/carbon/yawn/New()
 	..()
-	emote_type = EMOTE_SOUND | EMOTE_MOUTH
+	emote_type = EMOTE_AUDIBLE | EMOTE_MOUTH
 
 /datum/emote/living/carbon/yawn/get_sound(mob/living/user)
 	var/mob/living/carbon/human = user

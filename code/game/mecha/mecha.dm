@@ -325,7 +325,7 @@
 	return FALSE
 
 /obj/mecha/proc/aftermove(move_type)
-	power_state(step_energy_drain)
+	use_power(step_energy_drain)
 	if(move_type & (MECHAMOVE_RAND | MECHAMOVE_STEP) && occupant)
 		var/obj/machinery/atmospherics/unary/portables_connector/possible_port = locate(/obj/machinery/atmospherics/unary/portables_connector) in loc
 		if(possible_port)
@@ -357,7 +357,7 @@
 				. = FALSE // We lie to mech code and say we didn't get to move, because we want to handle power usage + cooldown ourself
 				flick("[initial_icon]-phase", src)
 				forceMove(get_step(src, direction))
-				power_state(phasing_energy_drain)
+				use_power(phasing_energy_drain)
 				playsound(src, stepsound, 40, 1)
 				can_move = world.time + (step_in * 3)
 	else if(stepsound)
@@ -659,7 +659,7 @@
 	if(emp_proof)
 		return
 	if(get_charge())
-		power_state((cell.charge/3)/(severity*2))
+		use_power((cell.charge/3)/(severity*2))
 		take_damage(30 / severity, BURN, ENERGY, 1)
 	log_message("EMP detected", 1)
 	check_for_internal_damage(list(MECHA_INT_FIRE, MECHA_INT_TEMP_CONTROL, MECHA_INT_CONTROL_LOST, MECHA_INT_SHORT_CIRCUIT), 1)
@@ -886,7 +886,7 @@
 /obj/mecha/mech_melee_attack(obj/mecha/M)
 	if(!has_charge(melee_energy_drain))
 		return 0
-	power_state(melee_energy_drain)
+	use_power(melee_energy_drain)
 	if(M.damtype == BRUTE || M.damtype == BURN)
 		add_attack_logs(M.occupant, src, "Mecha-attacked with [M] ([uppertext(M.occupant.a_intent)]) ([uppertext(M.damtype)])")
 		. = ..()
@@ -1371,7 +1371,7 @@
 	if(cell)
 		return max(0, cell.charge)
 
-/obj/mecha/proc/power_state(amount)
+/obj/mecha/proc/use_power(amount)
 	if(get_charge())
 		cell.use(amount)
 		if(occupant)

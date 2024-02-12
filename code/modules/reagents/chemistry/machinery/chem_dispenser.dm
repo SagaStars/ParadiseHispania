@@ -117,7 +117,7 @@
 			return
 		var/usedpower = cell.give(recharge_amount)
 		if(usedpower)
-			power_state(15 * recharge_amount)
+			use_power(15 * recharge_amount)
 		recharge_counter = 0
 		return
 	recharge_counter++

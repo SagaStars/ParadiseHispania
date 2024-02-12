@@ -1,4 +1,4 @@
-/obj/item/twohanded/required/ram
+/obj/item/ram
 	name = "ram"
 	desc = "A heavy ram used to take down those annoying doors or other structures in your way."
 	icon = 'modular_hispania/icons/obj/items.dmi'
@@ -6,8 +6,7 @@
 	item_state = "ram"
 	force = 10
 	throwforce = 24
-	throw_range = 3
-	force_wielded = 20 // La fire-axe hace 24
+	throw_range = 1
 	attack_verb = list("rammed")
 	hitsound = 'modular_hispania/sound/weapons/ram.ogg'
 	usesound = 'modular_hispania/sound/weapons/ram.ogg'
@@ -27,8 +26,10 @@
 	/obj/structure/closet,
 	)
 
+	var/force_unwielded = 5
+	var/force_wielded = 21
 
-/obj/item/twohanded/required/ram/afterattack(atom/target, mob/user, proximity)
+/obj/item/ram/afterattack(atom/target, mob/user, proximity)
 	if(ramming)
 		to_chat(user, "<span class='warning'>You are already ramming!</span>")
 		return
@@ -40,7 +41,7 @@
 		rammear(A,user)
 	ramming = FALSE
 
-/obj/item/twohanded/required/ram/proc/rammear(obj/A,mob/user)
+/obj/item/ram/proc/rammear(obj/A,mob/user)
 	user.do_attack_animation(A)
 	playsound(get_turf(A), 'modular_hispania/sound/weapons/ram.ogg', 150, 1, -1)
 	to_chat(viewers(user), "<span class='danger'>[user] rams [A]!</span>")
@@ -59,8 +60,12 @@
 			if(old_loc != null)
 				eliminar_restos(old_loc)
 
-/obj/item/twohanded/required/ram/proc/eliminar_restos(old_loc)	//es lo mejor q se puede hacer sin tener q tocar el codigo de los airlocks
+/obj/item/ram/proc/eliminar_restos(old_loc)	//es lo mejor q se puede hacer sin tener q tocar el codigo de los airlocks
 	for(var/obj/item/airlock_electronics/D in old_loc)	//destruye el airlock_assembly dropeado
 		qdel(D)
 	for(var/obj/structure/door_assembly/E in old_loc)	//destruye el assembly
 		qdel(E)
+
+/obj/item/ram/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/two_handed, require_twohands = TRUE)

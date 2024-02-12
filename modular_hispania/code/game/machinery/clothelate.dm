@@ -339,7 +339,7 @@
 	switch(id_inserted)
 		if(MAT_METAL)
 			flick("clothelate", src)//plays metal insertion animation
-	power_state(min(1000, amount_inserted / 100))
+	use_power(min(1000, amount_inserted / 100))
 	SStgui.update_uis(src)
 
 /obj/machinery/clothelate/attack_ghost(mob/user)
@@ -376,7 +376,7 @@
 	var/power = max(2000, (metal_cost)*multiplier/5)
 	if(can_build(D, multiplier))
 		being_built = list(D, multiplier)
-		power_state(power)
+		use_power(power)
 		icon_state = "clothelate"
 		flick("clothelate_n",src)
 		if(is_stack)

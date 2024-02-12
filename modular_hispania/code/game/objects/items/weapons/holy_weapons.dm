@@ -12,7 +12,6 @@
 	icon_state = "pharoah_sceptre"
 	item_state = "pharoah_sceptre"
 	w_class = WEIGHT_CLASS_HUGE
-	slot_flags = SLOT_BACK
 	hispania_icon = TRUE
 	attack_verb = list("bashes", "smacks", "whacks")
 
@@ -21,7 +20,6 @@
 	desc = "A cursed hammer, which can only damage when you throw it."
 	icon_state = "pride"
 	item_state = "pride"
-	slot_flags = SLOT_BELT
 	hispania_icon = TRUE
 	force = 3
 	throwforce = 25

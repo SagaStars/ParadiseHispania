@@ -176,7 +176,7 @@
 			last_teleport = world.time
 
 			// use a lot of power
-			power_state(10000 / power_efficiency)
+			use_power(10000 / power_efficiency)
 			sparks()
 			linked_pad.sparks()
 

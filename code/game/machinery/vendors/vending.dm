@@ -798,7 +798,7 @@
 		speak(vend_reply)
 		last_reply = world.time
 
-	power_state(vend_power_usage)	//actuators and stuff
+	use_power(vend_power_usage)	//actuators and stuff
 	if(icon_vend) //Show the vending animation if needed
 		flick(icon_vend, src)
 	playsound(get_turf(src), 'sound/machines/machine_vend.ogg', 50, TRUE)

@@ -72,7 +72,7 @@
 	icon_state = "Emitter_Off"
 	anchored = TRUE
 	density = TRUE
-	power_state = NO_POWER_USE
+	use_power = NO_POWER_USE
 	idle_power_consumption = 50
 	active_power_consumption = 50000
 	pixel_x = -32

@@ -232,7 +232,7 @@
 		visible_message("<span class='danger'>You hear a loud metallic grinding sound.</span>")
 		return
 
-	power_state(1000)
+	use_power(1000)
 	visible_message("<span class='danger'>You hear a loud squelchy grinding sound.</span>")
 
 	operating = TRUE

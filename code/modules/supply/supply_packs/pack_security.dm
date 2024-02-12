@@ -258,8 +258,8 @@
 
 /datum/supply_packs/security/armory/laserrifle
 	name = "IK-30 Security Laser Rifle Crate"
-	contains = list(/obj/item/gun/projectile/automatic/laserrifle,
-					/obj/item/gun/projectile/automatic/laserrifle)
+	contains = list(/obj/item/gun/projectile/automatic/fullauto/laserrifle,
+					/obj/item/gun/projectile/automatic/fullauto/laserrifle)
 	cost = 500
 	containertype = /obj/structure/closet/crate/secure/plasma
 	containername = "laser rifle crate"

@@ -40,7 +40,7 @@
 	if(stat & (BROKEN|NOPOWER))
 		return
 
-	power_state(500 * power)
+	use_power(500 * power)
 	var/O_limit = 0
 	var/atom/target = get_edge_target_turf(src, dir)
 	for(var/atom/movable/O in loc)
@@ -50,7 +50,7 @@
 			if(O_limit >= 20)//so no more than 20 items are sent at a time, probably for counter-lag purposes
 				break
 
-			power_state(500)
+			use_power(500)
 			var/coef = 1
 			if(emagged)
 				coef = 5

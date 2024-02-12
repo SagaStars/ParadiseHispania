@@ -14,7 +14,7 @@
 	turns_per_move = 1
 	maxHealth = 20
 	health = 20
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat = 1)
+	//butcher_results = list(/obj/item/reagent_containers/food/snacks/meat = 1)
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "whacks"

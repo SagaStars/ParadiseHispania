@@ -2,8 +2,8 @@
 	holder_type = /obj/machinery/clothelate
 	wire_count = 10
 	proper_name = "Clothelate"
-	window_x = 340
-	window_y = 55
+	//window_x = 340
+	//window_y = 55
 
 /datum/wires/clothelate/New(atom/_holder)
 	wires = list(WIRE_CLOTHELATE_HACK, WIRE_ELECTRIFY, WIRE_CLOTHELATE_DISABLE)

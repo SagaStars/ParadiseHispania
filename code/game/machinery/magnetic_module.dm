@@ -168,7 +168,7 @@
 				if(isAI(S)) continue
 				step_towards(S, center)
 
-		power_state(electricity_level * 5)
+		use_power(electricity_level * 5)
 		sleep(13 - electricity_level)
 
 	magpulling = FALSE

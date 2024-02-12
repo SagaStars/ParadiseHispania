@@ -234,7 +234,7 @@
 	reload()
 
 /obj/machinery/bsa/full/proc/reload()
-	power_state(power_used_per_shot)
+	use_power(power_used_per_shot)
 	last_fire_time = world.time / 10
 
 /obj/item/circuitboard/machine/bsa/back

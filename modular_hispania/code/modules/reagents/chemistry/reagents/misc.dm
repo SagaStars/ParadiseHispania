@@ -7,7 +7,7 @@
 	reagent_state = LIQUID
 	color = "#C8A5DC" // rgb: 200, 165, 220
 	process_flags = ORGANIC | SYNTHETIC
-	can_synth = FALSE
+	//can_synth = FALSE
 	taste_description = "health"
 
 /datum/reagent/medicine/miracledrops/on_mob_life(mob/living/carbon/M)

@@ -522,7 +522,7 @@
 			ejectItem(TRUE)
 		if(globalMalf > 60)
 			visible_message("<span class='warning'>[src] begins to smoke and hiss, shaking violently!</span>")
-			power_state(500000)
+			use_power(500000)
 			investigate_log("Experimentor has drained power from its APC", "experimentor")
 
 	spawn(resetTime)
@@ -568,7 +568,7 @@
 		else
 			dotype = matchReaction(process,scantype)
 		experiment(dotype,process)
-		power_state(750)
+		use_power(750)
 		if(dotype != FAIL)
 			if(process && process.origin_tech)
 				var/list/temp_tech = ConvertReqString2List(process.origin_tech)

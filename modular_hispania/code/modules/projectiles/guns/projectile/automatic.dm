@@ -135,6 +135,22 @@
 	knife_x_offset = 25
 	knife_y_offset = 12
 
+
+/obj/item/gun/projectile/automatic/fullauto/laserrifle
+	name = "security laser rifle"
+	desc = "A bulky, single barreled rifle that uses disposable laser cartridges rather than an internal power cell. Utilized by Nanotrasen's private security force."
+	icon_state = "laserrifle"
+	item_state = "lasercarbine"
+	w_class = WEIGHT_CLASS_BULKY
+	origin_tech = "combat=3;materials=2"
+	mag_type = /obj/item/ammo_box/magazine/laser
+	fire_sound = 'sound/weapons/gunshots/gunshot_lascarbine.ogg'
+	magin_sound = 'sound/weapons/gun_interactions/batrifle_magin.ogg'
+	magout_sound = 'sound/weapons/gun_interactions/batrifle_magout.ogg'
+	can_suppress = FALSE
+	fire_delay = 2.75
+	actions_types = list()
+
 /obj/item/gun/projectile/automatic/fullauto/wt550/update_icon_state()
 	icon_state = "wt550[magazine ? "-[CEILING(get_ammo(0)/4, 1)*4]" : ""]"
 	item_state = "wt550-[CEILING(get_ammo(0)/6.7, 1)]"
@@ -329,3 +345,20 @@
 /obj/item/gun/projectile/automatic/fullauto/lasercarbine/update_icon_state()
 	icon_state = "lasercarbine[magazine ? "-[CEILING(get_ammo(0)/10, 1)*10]" : ""]"
 	item_state = "lasercarbine[magazine ? "on" : "off"][get_ammo() ? "" : "empty"]"
+
+/obj/item/gun/projectile/automatic/ak814
+	name = "\improper AK-814 assault rifle"
+	desc = "A modern AK assault rifle favored by elite Soviet soldiers."
+	icon_state = "ak814"
+	item_state = "ak814"
+	origin_tech = "combat=5;materials=3"
+	mag_type = /obj/item/ammo_box/magazine/ak814
+	fire_sound = 'sound/weapons/gunshots/gunshot_mg.ogg'
+	magin_sound = 'sound/weapons/gun_interactions/batrifle_magin.ogg'
+	magout_sound = 'sound/weapons/gun_interactions/batrifle_magout.ogg'
+	can_suppress = FALSE
+	can_bayonet = TRUE
+	knife_x_offset = 26
+	knife_y_offset = 10
+	burst_size = 2
+	fire_delay = 1

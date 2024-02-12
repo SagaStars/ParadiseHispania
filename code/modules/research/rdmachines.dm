@@ -58,11 +58,11 @@
 	var/stack_name
 	if(ispath(type_inserted, /obj/item/stack/ore/bluespace_crystal))
 		stack_name = "bluespace"
-		power_state(MINERAL_MATERIAL_AMOUNT / 10)
+		use_power(MINERAL_MATERIAL_AMOUNT / 10)
 	else
 		var/obj/item/stack/S = type_inserted
 		stack_name = initial(S.name)
-		power_state(min(1000, (amount_inserted / 100)))
+		use_power(min(1000, (amount_inserted / 100)))
 	add_overlay("protolathe_[stack_name]")
 	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, cut_overlay), "protolathe_[stack_name]"), 10)
 

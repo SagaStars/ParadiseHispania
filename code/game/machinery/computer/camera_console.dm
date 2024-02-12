@@ -75,7 +75,7 @@
 		if(length(watchers) == 1 && is_living)
 			if(!silent_console)
 				playsound(src, 'sound/machines/terminal_on.ogg', 25, FALSE)
-			power_state(active_power_consumption)
+			use_power(active_power_consumption)
 		// Register map objects
 		user.client.register_map_obj(cam_screen)
 		for(var/plane in cam_plane_masters)
