@@ -135,6 +135,9 @@
 	knife_x_offset = 25
 	knife_y_offset = 12
 
+/obj/item/gun/projectile/automatic/fullauto/wt550/update_icon_state()
+	icon_state = "wt550[magazine ? "-[CEILING(get_ammo(0)/4, 1)*4]" : ""]"
+	item_state = "wt550-[CEILING(get_ammo(0)/6.7, 1)]"
 
 /obj/item/gun/projectile/automatic/fullauto/laserrifle
 	name = "security laser rifle"
@@ -148,12 +151,12 @@
 	magin_sound = 'sound/weapons/gun_interactions/batrifle_magin.ogg'
 	magout_sound = 'sound/weapons/gun_interactions/batrifle_magout.ogg'
 	can_suppress = FALSE
-	fire_delay = 2.75
+	fire_delay = 2.8
 	actions_types = list()
 
-/obj/item/gun/projectile/automatic/fullauto/wt550/update_icon_state()
-	icon_state = "wt550[magazine ? "-[CEILING(get_ammo(0)/4, 1)*4]" : ""]"
-	item_state = "wt550-[CEILING(get_ammo(0)/6.7, 1)]"
+/obj/item/gun/projectile/automatic/laserrifle/update_icon_state()
+	icon_state = "laserrifle[magazine ? "-[CEILING(get_ammo(0)/5, 1)*5]" : ""]"
+	item_state = "lasercarbine[magazine ? "-[CEILING(get_ammo(0)/5, 1)*5]" : ""]"
 
 //Type-U3 Uzi//
 /obj/item/gun/projectile/automatic/fullauto/mini_uzi
@@ -346,7 +349,7 @@
 	icon_state = "lasercarbine[magazine ? "-[CEILING(get_ammo(0)/10, 1)*10]" : ""]"
 	item_state = "lasercarbine[magazine ? "on" : "off"][get_ammo() ? "" : "empty"]"
 
-/obj/item/gun/projectile/automatic/ak814
+/obj/item/gun/projectile/automatic/fullauto/twomode/ak814
 	name = "\improper AK-814 assault rifle"
 	desc = "A modern AK assault rifle favored by elite Soviet soldiers."
 	icon_state = "ak814"

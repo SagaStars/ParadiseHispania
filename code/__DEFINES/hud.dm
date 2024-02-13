@@ -27,8 +27,8 @@
 #define DIAG_AIRLOCK_HUD 	"22" // Airlock shock overlay
 #define GLAND_HUD 			"23"//Gland indicators for abductors
 #define JANI_HUD			"24" // Sign overlay over cleanable decals
-
-
+//HISPANIA HUD
+#define NATIONS_HUD	"25"
 
 //by default everything in the hud_list of an atom is an image
 //a value in hud_list with one of these will change that behavior
@@ -58,12 +58,14 @@
 #define DATA_HUD_ABDUCTOR	19
 #define ANTAG_HUD_EVENTMISC 20
 #define ANTAG_HUD_BLOB 21
-#define GAME_HUD_NATIONS 25
+// HISPANIA CHANGES DEFINES
+#define DATA_HUD_NATIONS 22
 
 // Notification action types
 #define NOTIFY_JUMP "jump"
 #define NOTIFY_ATTACK "attack"
 #define NOTIFY_FOLLOW "orbit"
+
 
 
 // The kind of things granted by HUD items in game, that do not manifest as

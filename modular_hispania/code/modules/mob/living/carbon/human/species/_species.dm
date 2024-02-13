@@ -7,6 +7,7 @@
 	var/list/female_yawn_sound
 
 /datum/species/New()
+	. = ..()
 	male_scream_sound = list('modular_hispania/sound/voice/human/malescream_1.ogg',
 	'modular_hispania/sound/voice/human/malescream_2.ogg',
 	'modular_hispania/sound/voice/human/malescream_3.ogg',
@@ -33,4 +34,3 @@
 
 	male_yawn_sound = list('modular_hispania/sound/voice/human/maleyawn1.ogg',
 	'modular_hispania/sound/voice/human/maleyawn2.ogg')
-

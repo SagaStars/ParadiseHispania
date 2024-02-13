@@ -32,3 +32,4 @@ GLOBAL_LIST_EMPTY(surgeries_list)
 GLOBAL_LIST_EMPTY(hear_radio_list)			//Mobs that hear the radio even if there's no client
 
 GLOBAL_LIST_EMPTY(emote_list)
+GLOBAL_LIST_EMPTY(all_nations) // HISPANIA

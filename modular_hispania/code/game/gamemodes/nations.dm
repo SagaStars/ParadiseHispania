@@ -288,11 +288,11 @@
 //prepare for copypaste
 //While not an Antag i AM using the set_antag hud on this to make this easier.
 /datum/game_mode/proc/update_nations_icons_added(datum/mind/nations_mind,var/naticon)
-	var/datum/atom_hud/antag/nations_hud = GLOB.huds[GAME_HUD_NATIONS]
+	var/datum/atom_hud/antag/nations_hud = GLOB.huds[DATA_HUD_NATIONS]
 	nations_hud.join_hud(nations_mind)
 	set_nations_hud(nations_mind,naticon)
 
 /datum/game_mode/proc/update_nations_icons_removed(datum/mind/nations_mind)
-	var/datum/atom_hud/antag/nations_hud = GLOB.huds[GAME_HUD_NATIONS]
+	var/datum/atom_hud/antag/nations_hud = GLOB.huds[DATA_HUD_NATIONS]
 	nations_hud.leave_hud(nations_mind)
 	set_nations_hud(nations_mind, null)
