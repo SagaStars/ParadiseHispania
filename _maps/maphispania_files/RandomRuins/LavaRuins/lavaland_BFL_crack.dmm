@@ -2,8 +2,12 @@
 "a" = (
 /turf/simulated/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
+"e" = (
+/obj/item/chair/wood,
+/turf/simulated/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
 "R" = (
-/obj/bfl_crack,
+/obj/structure/chair/noose,
 /turf/simulated/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 
@@ -25,7 +29,7 @@ a
 a
 a
 R
-a
+e
 a
 "}
 (4,1,1) = {"

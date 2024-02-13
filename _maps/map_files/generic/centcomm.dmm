@@ -2931,8 +2931,6 @@
 /obj/item/ammo_box/magazine/smgm45,
 /obj/item/ammo_box/magazine/smgm45,
 /obj/item/ammo_box/magazine/smgm45,
-/obj/item/gun/projectile/automatic/c20r,
-/obj/item/gun/projectile/automatic/c20r,
 /turf/simulated/floor/plasteel/dark,
 /area/syndicate_mothership)
 "ko" = (
@@ -3854,7 +3852,6 @@
 /area/abductor_ship)
 "mX" = (
 /obj/machinery/door/window{
-	dir = 2;
 	name = "Cockpit";
 	req_access_txt = "150"
 	},
@@ -4139,15 +4136,11 @@
 /turf/simulated/floor/plasteel/freezer,
 /area/syndicate_mothership)
 "nN" = (
-/obj/effect/turf_decal/stripes/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/stripes/corner,
 /turf/simulated/floor/plating/airless,
 /area/syndicate_mothership)
 "nO" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/stripes/line,
 /turf/simulated/floor/plating/airless,
 /area/syndicate_mothership)
 "nP" = (
@@ -4908,8 +4901,7 @@
 "qJ" = (
 /obj/structure/table,
 /obj/machinery/door/window/classic/normal{
-	name = "security checkpoint";
-	dir = 2
+	name = "security checkpoint"
 	},
 /turf/simulated/floor/carpet,
 /area/admin)
@@ -5005,11 +4997,6 @@
 /obj/item/ammo_box/magazine/smgm45,
 /obj/item/ammo_box/magazine/smgm45,
 /obj/item/ammo_box/magazine/smgm45,
-/obj/item/gun/projectile/automatic/c20r,
-/obj/item/gun/projectile/automatic/c20r{
-	pixel_x = 3;
-	pixel_y = -3
-	},
 /turf/simulated/floor/plasteel,
 /area/admin)
 "qY" = (
@@ -5900,20 +5887,10 @@
 /obj/item/ammo_box/magazine/mm556x45,
 /obj/item/ammo_box/magazine/mm556x45,
 /obj/item/ammo_box/magazine/mm556x45,
-/obj/item/gun/projectile/automatic/l6_saw,
-/obj/item/gun/projectile/automatic/l6_saw{
-	pixel_x = 3;
-	pixel_y = -3
-	},
 /turf/simulated/floor/plasteel,
 /area/admin)
 "uh" = (
 /obj/structure/rack,
-/obj/item/gun/projectile/automatic/proto,
-/obj/item/gun/projectile/automatic/proto{
-	pixel_x = 3;
-	pixel_y = -3
-	},
 /turf/simulated/floor/plasteel,
 /area/admin)
 "ui" = (
@@ -5928,11 +5905,6 @@
 /obj/item/ammo_box/a40mm,
 /obj/item/ammo_box/a40mm,
 /obj/item/ammo_box/a40mm,
-/obj/item/gun/projectile/automatic/m90,
-/obj/item/gun/projectile/automatic/m90{
-	pixel_x = 3;
-	pixel_y = -3
-	},
 /turf/simulated/floor/plasteel,
 /area/admin)
 "uj" = (
@@ -7909,9 +7881,7 @@
 /turf/simulated/floor/wood,
 /area/ghost_bar)
 "Cl" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/stripes/line,
 /turf/simulated/floor/plating/airless,
 /area/centcom/control)
 "Cm" = (
@@ -8485,7 +8455,6 @@
 /area/holodeck/source_basketball)
 "Ej" = (
 /obj/machinery/door/window/reinforced/normal{
-	dir = 2;
 	name = "Cell Door";
 	req_access_txt = "150"
 	},
@@ -9452,9 +9421,6 @@
 /obj/item/ammo_box/magazine/smgm9mm,
 /obj/item/ammo_box/magazine/smgm9mm,
 /obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/gun/projectile/automatic/proto,
-/obj/item/gun/projectile/automatic/proto,
-/obj/item/gun/projectile/automatic/proto,
 /turf/simulated/floor/mineral/plastitanium/red,
 /area/shuttle/gamma/space)
 "HJ" = (
@@ -11386,9 +11352,7 @@
 /obj/machinery/door/airlock/medical/glass{
 	name = "Escape Shuttle Infirmary"
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/stripes/line,
 /turf/simulated/floor/plasteel,
 /area/shuttle/escape)
 "Of" = (
@@ -14336,8 +14300,7 @@
 "YJ" = (
 /obj/machinery/door/window/classic/normal{
 	name = "Cell B";
-	req_access_txt = "101";
-	dir = 2
+	req_access_txt = "101"
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/admin)
@@ -14567,15 +14530,6 @@
 /obj/item/ammo_box/magazine/smgm9mm,
 /obj/item/ammo_box/magazine/smgm9mm,
 /obj/item/ammo_box/magazine/smgm9mm,
-/obj/item/gun/projectile/automatic/proto,
-/obj/item/gun/projectile/automatic/proto{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/item/gun/projectile/automatic/proto{
-	pixel_x = 6;
-	pixel_y = -6
-	},
 /turf/simulated/floor/plasteel{
 	dir = 9;
 	icon_state = "darkred"
