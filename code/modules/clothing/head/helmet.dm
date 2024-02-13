@@ -20,7 +20,7 @@
 		"Drask" = 'icons/mob/clothing/species/drask/helmet.dmi',
 		"Grey" = 'icons/mob/clothing/species/grey/helmet.dmi'
 		) */
-	 //HISPANIA CHANGES END
+	//HISPANIA CHANGES END
 
 /obj/item/clothing/head/helmet/attack_self(mob/user)
 	if(can_toggle && !user.incapacitated())

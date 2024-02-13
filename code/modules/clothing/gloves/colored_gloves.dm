@@ -55,7 +55,7 @@
 		"Grey" = 'icons/mob/clothing/species/grey/gloves.dmi',
 		"Kidan" = 'icons/mob/clothing/species/kidan/gloves.dmi',
 		)*/
-	 //HISPANIA CHANGES END
+	//HISPANIA CHANGES END
 
 
 /obj/item/clothing/gloves/color/black/hos

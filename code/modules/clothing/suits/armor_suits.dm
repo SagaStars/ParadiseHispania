@@ -47,7 +47,7 @@
 	/*sprite_sheets = list(
 		"Grey" = 'icons/mob/clothing/species/grey/suit.dmi'
 	)*/
-	 //HISPANIA CHANGES END
+	//HISPANIA CHANGES END
 	icon_state = "armor"
 	item_state = "armor"
 	var/obj/item/clothing/accessory/holobadge/attached_badge
