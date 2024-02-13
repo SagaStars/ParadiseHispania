@@ -2845,7 +2845,6 @@
 #include "modular_hispania\code\datums\datumvars.dm"
 #include "modular_hispania\code\datums\supplypacks.dm"
 #include "modular_hispania\code\datums\uplink_item.dm"
-#include "modular_hispania\code\datums\ruins\lavaland.dm"
 #include "modular_hispania\code\datums\spells\clown.dm"
 #include "modular_hispania\code\game\area\hispania_areas.dm"
 #include "modular_hispania\code\game\dna\genes\goon_powers.dm"
