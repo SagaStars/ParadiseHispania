@@ -646,7 +646,7 @@
 	glasses = /obj/item/clothing/glasses/night
 	belt = /obj/item/storage/belt/military/assault/soviet/full
 	r_pocket = /obj/item/melee/classic_baton/telescopic
-	l_hand = /obj/item/gun/projectile/automatic/ak814
+	l_hand = /obj/item/gun/projectile/automatic/fullauto/twomode/ak814
 	suit_store = /obj/item/tank/internals/emergency_oxygen/double
 
 	backpack_contents = list(
