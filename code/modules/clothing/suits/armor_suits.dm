@@ -43,7 +43,7 @@
 /obj/item/clothing/suit/armor/vest/security
 	name = "security armor"
 	desc = "An armored vest that protects against some damage. This one has a clip for a holobadge."
-	 //HISPANIA CHANGES START
+	//HISPANIA CHANGES START
 	/*sprite_sheets = list(
 		"Grey" = 'icons/mob/clothing/species/grey/suit.dmi'
 	)*/

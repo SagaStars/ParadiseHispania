@@ -48,7 +48,7 @@
 	max_heat_protection_temperature = GLOVES_MAX_TEMP_PROTECT
 	resistance_flags = NONE
 	var/can_be_cut = 1
-	 //HISPANIA CHANGES START
+	//HISPANIA CHANGES START
 	/*sprite_sheets = list(
 		"Vox" = 'icons/mob/clothing/species/vox/gloves.dmi',
 		"Drask" = 'icons/mob/clothing/species/drask/gloves.dmi',

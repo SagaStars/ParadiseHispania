@@ -180,6 +180,7 @@
 /obj/item/ammo_box/c9mm,
 /obj/item/ammo_box/c9mm,
 /obj/item/ammo_box/c9mm,
+/obj/item/gun/projectile/automatic/fullauto/wt550,
 /turf/simulated/floor/plasteel,
 /area/ruin/space/unpowered)
 "ap" = (
@@ -247,16 +248,10 @@
 /area/ruin/space/unpowered)
 "ay" = (
 /obj/structure/table,
-/obj/item/gun/projectile/automatic/wt550{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/obj/item/gun/projectile/automatic/wt550{
-	pixel_x = 2
-	},
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_y = 30
 	},
+/obj/item/gun/projectile/automatic/fullauto/wt550,
 /turf/simulated/floor/plasteel,
 /area/ruin/space/unpowered)
 "az" = (
